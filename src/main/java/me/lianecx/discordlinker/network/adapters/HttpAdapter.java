@@ -28,7 +28,7 @@ public class HttpAdapter implements NetworkAdapter {
 
     //If snapshot version, request test-bot at port 81 otherwise request main-bot at port 80
     public static final int BOT_PORT = PLUGIN_VERSION.contains("SNAPSHOT") ? 81 : 80;
-    public static final URI BOT_URI = URI.create("http://api.mclinker.com:" + BOT_PORT);
+    public static final URI BOT_URI = URI.create("162.33.23.210:" + BOT_PORT);
 
     public HttpAdapter() {
         this.app = new Express();
